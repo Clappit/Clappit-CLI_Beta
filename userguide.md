@@ -14,6 +14,43 @@ Clappit is the next-generation cloud management platform designed to revolutioni
 
 5. **Proactive Drift Detection:** Stay on top of changes in your infrastructure and identify unauthorized modifications.Ensure compliance and security.
 
+### Prerequisites
+
+1. **Docker**: A containerization platform. [Download and install Docker](https://docs.docker.com/get-docker/).
+
+_if there is kubernetes cluster this step wouldn`t be required_
+
+2. **kind (Kubernetes in Docker)**: A tool for running local Kubernetes clusters using Docker container "nodes". [Install kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation).
+
+_if there is kubernetes cluster this step wouldn`t be required_
+
+3. **kubectl**: The Kubernetes command-line tool, allows you to run commands against Kubernetes clusters. [Install kubectl](https://kubernetes.io/docs/tasks/tools/).
+
+4. **Helm**: A package manager for Kubernetes. [Install Helm](https://helm.sh/docs/intro/install/).
+
+### Installing Clappit
+
+After installing the prerequisites, you can proceed with the installation of Clappit. Follow these steps:
+
+1. **Download Clappit**: Visit the Clappit official website or the GitHub repository to download the latest version of Clappit.
+
+2. **Install Clappit**:
+   - On **Linux/macOS**, open a terminal and run:
+     ```bash
+     chmod +x clappit_installer.sh
+     ./clappit_installer.sh
+     ```
+   - On **Windows**, download the installer and follow the on-screen instructions.
+
+3. **Verify Installation**:
+   - To verify that Clappit has been installed correctly, run:
+     ```bash
+     clappit --version
+     ```
+   - You should see the installed version of Clappit displayed in the terminal.
+
+Congratulations! You have successfully installed Clappit and its prerequisites. You are now ready to simplify your cloud management.
+
 # Clappit Command Line Tool User Guide
 
 Welcome to the Clappit Command Line Tool User Guide. 
