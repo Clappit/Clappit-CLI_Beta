@@ -32,7 +32,14 @@ _if there is kubernetes cluster this step wouldn`t be required_
 
 After installing the prerequisites, you can proceed with the installation of Clappit. Follow these steps:
 
-1. **Download Clappit**: Visit the Clappit official website or the GitHub repository to download the latest version of Clappit.
+1. **Download Clappit**: 
+
+- [Download for MacBook (arm 64 - Silicon Processor - M1, M2, M3)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip)
+- [Download for MacBook (x64 - Intel Processor)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_x64.zip)
+- [Download for Ubuntu (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_arm64.zip)
+- [Download for Ubuntu (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_x64.zip)
+- [Download for Windows (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_arm64.zip)
+- [Download for Windows (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_x64.zip)
 
 2. **Install Clappit**:
    - On **Linux/macOS**, open a terminal and run:
