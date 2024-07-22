@@ -1,4 +1,4 @@
-## *Beta Support*
+## **Beta Support**
 
 Thank you for participating in our beta program! We appreciate your valuable feedback as we work to improve our product.
 
