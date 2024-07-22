@@ -61,7 +61,14 @@ check_kind_cluster() {
     if echo "$clusters" | grep -q "$cluster_name"; then
         echo "Cluster '$cluster_name' exists."
     else
-        kind create cluster --name $cluster_name --wait 5m
+        cat <<EOF > kind-config.yaml
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.23.0
+EOF
+        kind create cluster --name $cluster_name --config kind-config.yaml --wait 5m
     fi
 }
 
@@ -77,7 +84,7 @@ fi
 brew update
 
 # Install prerequisites using Homebrew
-brew install curl git jq
+brew install curl jq
 
 # Check if Docker is already installed and started
 check_and_start_docker
