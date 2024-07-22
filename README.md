@@ -53,13 +53,13 @@ Note: If you did not recieve an email in the first 12 hours of signing up, email
 
 ### User Guide
 
-You can find the user guide of how to use Clappit here: **[User Guide](https://github.com/iwpraveen/Clappit-CLI_Beta/blob/main/userguide.md)**
+You can find the user guide of how to use Clappit here: **[User Guide](https://github.com/Clappit/Clappit-CLI_Beta/blob/master/userguide)**
 
 ### Your Feedback is Valuable!
 
 As a beta participant, your feedback will be invaluable in shaping the future of Clappit. We encourage you to share your experiences, suggestions, and any issues you encounter. We'll be in regular contact to gather your input and provide support.
 
-For joining our support community check **[support.md](https://github.com/iwpraveen/Clappit-CLI_Beta/blob/main/support.md)** file in the repo.
+For joining our support community check **[support.md](https://github.com/Clappit/Clappit-CLI_Beta/blob/master/support.md)** file in the repo.
 You can quickly join in the forum here **[Join Clappit Slack Forum](https://join.slack.com/t/clappit/shared_invite/zt-2mouyjlde-fXTY8_gJH0hXHP_ma5xroQ)**
 
 **Join us in the Clappit revolution and simplify your cloud management!**
