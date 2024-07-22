@@ -53,7 +53,7 @@ Note: If you did not recieve an email in the first 12 hours of signing up, email
 
 ### User Guide
 
-You can find the user guide of how to use Clappit here: **[User Guide](https://github.com/Clappit/Clappit-CLI_Beta/blob/master/userguide)**
+You can find the user guide of how to use Clappit here: **[User Guide](https://github.com/Clappit/Clappit-CLI_Beta/blob/master/userguide.md)**
 
 ### Your Feedback is Valuable!
 
