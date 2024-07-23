@@ -44,7 +44,16 @@ Clappit is a next-generation cloud management platform designed to revolutionize
 
 1.  **Download Clappit:**
     
-    -   Choose the appropriate download for your operating system and architecture from the provided links.
+    Choose the appropriate download for your operating system and architecture from the provided links.
+
+    - [Download for MacBook (arm 64 - Silicon Processor - M1, M2, M3)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip)
+    - [Download for MacBook (x64 - Intel Processor)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_x64.zip)
+    - [Download for Ubuntu (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_arm64.zip)
+    - [Download for Ubuntu (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_x64.zip)
+    - [Download for Windows (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_arm64.zip)
+    - [Download for Windows (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_x64.zip)
+
+
 2.  **Install Clappit:**
     
     **Linux/macOS:**
