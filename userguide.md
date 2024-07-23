@@ -18,15 +18,28 @@ Clappit is the next-generation cloud management platform designed to revolutioni
 
 1. **Docker**: A containerization platform. [Download and install Docker](https://docs.docker.com/get-docker/).
 
-_if there is kubernetes cluster this step wouldn`t be required_
+_if you already have kubernetes cluster in your local , you don`t require this_
 
 2. **kind (Kubernetes in Docker)**: A tool for running local Kubernetes clusters using Docker container "nodes". [Install kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation).
 
-_if there is kubernetes cluster this step wouldn`t be required_
+_if you already have kubernetes cluster in your local , you don`t require this_
 
 3. **kubectl**: The Kubernetes command-line tool, allows you to run commands against Kubernetes clusters. [Install kubectl](https://kubernetes.io/docs/tasks/tools/).
 
 4. **Helm**: A package manager for Kubernetes. [Install Helm](https://helm.sh/docs/intro/install/).
+
+Alternatively
+
+- On **Linux/macOS**,
+1. Download [install_tools_ubuntu.sh](/installation/install_tools_ubuntu.sh) for Ubuntu or 
+ Download [install_tools_mac.sh](/installation/install_tools_mac.sh) for mac
+2. Navigate to downloaded folder in Terminal
+3. Run following command
+   
+  ```shell
+  bash install_tools_ubuntu.sh
+  bash install_tools_mac.sh
+  ```
 
 ### Installing Clappit
 
@@ -42,13 +55,39 @@ After installing the prerequisites, you can proceed with the installation of Cla
 - [Download for Windows (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_x64.zip)
 
 2. **Install Clappit**:
-   - On **Linux/macOS**, open a terminal and run:
-     ```bash
-     chmod +x clappit_installer.sh
-     ./clappit_installer.sh
-     ```
-   - On **Windows**, download the installer and follow the on-screen instructions.
+   
+  This code snippet provides instructions for installing and setting up the Clappit CLI tool on different operating systems.
 
+  - On **Linux/macOS**, open a terminal and follow these steps:
+    1. Download [setup_macos.sh](/installation/setup-macos.sh) or [setup_ubuntu](/installation/setup_ubuntu.sh)
+    2. Navigate to downloaded folder in Terminal
+    3. Install [clappit](https://clappit.ai) by running the following command:
+      ```shell
+      bash setup_macos.sh or bash setup_ubuntu.sh
+      ```
+    OR
+    1. Download the Clappit executable file.
+    2. Extract the Clappit executable file to a desired location.
+    3. Open a terminal and navigate to the extracted folder.
+    4. Make the Clappit executable by running the following command:
+      ```shell
+      chmod +x clappit
+      ```
+    5. Add the Clappit executable to your PATH environment variable by running the following command:
+      ```shell
+      export PATH="$PATH:/path/to/clappit"
+      ```
+      Replace `/path/to/clappit` with the actual path to the Clappit executable file.
+    6. You can now use the Clappit CLI tool from anywhere in the command line by simply typing `clappit`.
+
+  - On **Windows**, follow these steps:
+    1. Download the Clappit installer zip file.
+    2. Extract the contents of the zip file to a desired location.
+    3. Open a command prompt or PowerShell window.
+    4. Navigate to the extracted folder using the `cd` command.
+    5. Make sure the extracted folder contains the `clappit.exe` file.
+    6. Add the extracted folder to the system's PATH environment variable to make the `clappit` command accessible from anywhere.
+       
 3. **Verify Installation**:
    - To verify that Clappit has been installed correctly, run:
      ```bash
