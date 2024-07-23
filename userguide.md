@@ -1,6 +1,6 @@
-# Clappit: Your Cloud, Simplified
+# Clappit: Bulletproof your Infrastructure Drift and Testing
 
-Clappit is the next-generation cloud management platform designed to revolutionize how you manage your cloud infrastructure. With an intuitive interface and powerful automation, Clappit empowers you to: 
+Clappit is the next-generation cloud management platform designed to revolutionize how you manage your cloud infrastructure.
 
 **Features**
 
