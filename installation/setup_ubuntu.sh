@@ -5,7 +5,7 @@ INSTALL_DIR="/usr/local/bin"
 
 # Replace with the actual URL of the binary you want to download
 DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-x64.zip"
- BINARY_NAME="clappit"
+BINARY_NAME="clappit"
 # Detect architecture and adjust DOWNLOAD_URL if necessary
 ARCH=$(uname -m)
 case $ARCH in
