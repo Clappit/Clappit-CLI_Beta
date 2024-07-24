@@ -24,6 +24,20 @@ Clappit is a next-generation cloud management platform designed to revolutionize
     
 4.  **Helm:** A package manager for Kubernetes. [**Install Helm**](https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/ )
 
+5. **Crossplane:** Crossplane operator and providers as helm package instalation
+   
+   *Crospplane Operator*
+    ```bash
+    helm repo add crossplane-stable https://charts.crossplane.io/stable
+    helm repo update
+    helm install crossplane --namespace crossplane-system crossplane-stable/crossplane --create-namespace
+    ```
+    
+    After crossplane oeprator is ready, install providers
+    ```bash
+    helm install xproviders oci://index.docker.io/clappit/xproviders --version 0.1.0 -n crossplane-system --create-namespace
+    ```
+
 ### **Alternative Installation (Linux/macOS):**
 
 1.  Download the appropriate script:
@@ -46,12 +60,12 @@ Clappit is a next-generation cloud management platform designed to revolutionize
     
     Choose the appropriate download for your operating system and architecture from the provided links.
 
-    - [Download for MacBook (arm 64 - Silicon Processor - M1, M2, M3)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip)
-    - [Download for MacBook (x64 - Intel Processor)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_x64.zip)
-    - [Download for Ubuntu (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_arm64.zip)
-    - [Download for Ubuntu (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_x64.zip)
-    - [Download for Windows (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_arm64.zip)
-    - [Download for Windows (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit_windows_x64.zip)
+    - [Download for MacBook (arm 64 - Silicon Processor - M1, M2, M3)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-arm64.zip)
+    - [Download for MacBook (x64 - Intel Processor)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-x64.zip)
+    - [Download for Ubuntu (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-arm64.zip)
+    - [Download for Ubuntu (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-x64.zip)
+    - [Download for Windows (arm64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-win-arm64.zip)
+    - [Download for Windows (x64)](https://clappit-public.s3.us-west-2.amazonaws.com/clappit-win-x64.zip)
 
 
 2.  **Install Clappit:**
