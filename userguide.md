@@ -12,6 +12,8 @@ Clappit is a next-generation cloud management platform designed to revolutionize
 
 ## Prerequisites
 
+***if any challenges with installation, please feel to reach [Support](/support.md)***
+
 1.  **Docker:** A containerization platform. [**Download and install Docker**](https://docs.docker.com/get-docker/)
     
     *(Not required if you already have a Kubernetes cluster running locally)*
@@ -55,6 +57,8 @@ Clappit is a next-generation cloud management platform designed to revolutionize
     ```
 
 ## Installing Clappit
+
+***if any challenges with installation, please feel to reach [Support](/support.md)***
 
 1.  **Download Clappit:**
     
