@@ -4,17 +4,17 @@
 INSTALL_DIR="/usr/local/bin"
 
 # Replace with the actual URL of the binary you want to download
-DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_x64.zip"
+DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-x64.zip"
  BINARY_NAME="clappit"
 # Detect architecture and adjust DOWNLOAD_URL if necessary
 ARCH=$(uname -m)
 case $ARCH in
     x86_64)
-        DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_x64.zip"
+        DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-x64.zip"
         BINARY_NAME="clappit"
         ;;
     aarch64 | arm64)
-        DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_ubuntu_arm64.zip"
+        DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-linux-arm64.zip"
         BINARY_NAME="clappit"
         ;;
     *)
@@ -43,6 +43,8 @@ apt-get install unzip
 # Extract the downloaded artifact
 echo "Extracting $BINARY_NAME.zip..."
 unzip -q "$DOWNLOAD_DIR/$BINARY_NAME.zip" -d "$DOWNLOAD_DIR"
+echo "cleaning $DOWNLOAD_DIR/$BINARY_NAME.zip"
+sudo rm $DOWNLOAD_DIR/$BINARY_NAME.zip
 
 if [[ $? -ne 0 ]]; then
     echo "Extraction failed. Exiting."
