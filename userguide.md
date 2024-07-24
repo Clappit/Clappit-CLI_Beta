@@ -307,12 +307,12 @@ Example: clappit sync -a=myapp -e=dev --diff --save -q=false
 
 - **import**: Imports and connects cloud infrastructure.
 
-*Usage* : `clappit import -a=<APPNAME> -e=<ENVNAME>`
+*Usage* : `clappit import -a=<APPNAME> -e=<ENVNAME> <CLOUD> -r=<region> -i=<ACCESSID> -k=<ACCESSKEY>`
 
 *Example*
 
 ```
-Example: clappit import -a=myapp -e=dev
+Example: clappit import -a=myapp -e=dev aws -r=us-east-1 -i=1234567890 -k=1234567890
 ```
 
 ### Check
