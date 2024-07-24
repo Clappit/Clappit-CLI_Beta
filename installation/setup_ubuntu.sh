@@ -43,13 +43,14 @@ apt-get install unzip
 # Extract the downloaded artifact
 echo "Extracting $BINARY_NAME.zip..."
 unzip -q "$DOWNLOAD_DIR/$BINARY_NAME.zip" -d "$DOWNLOAD_DIR"
-echo "cleaning $DOWNLOAD_DIR/$BINARY_NAME.zip"
-sudo rm $DOWNLOAD_DIR/$BINARY_NAME.zip
+
 
 if [[ $? -ne 0 ]]; then
     echo "Extraction failed. Exiting."
     exit 1
 fi
+echo "cleaning $DOWNLOAD_DIR/$BINARY_NAME.zip"
+sudo rm $DOWNLOAD_DIR/$BINARY_NAME.zip
 
 # Check if the installation directory exists
 if [ ! -d "$INSTALL_DIR" ]; then
