@@ -7,11 +7,11 @@ INSTALL_DIR="/usr/local/bin"
 
 # Replace with the actual URL of the binary you want to download
 
-DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip"
+DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-arm64.zip"
 
-[ $(uname -m) = x86_64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_x64.zip"
-[ $(uname -m) = aarch64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip"
-[ $(uname -m) = arm64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit_mac_arm64.zip"
+[ $(uname -m) = x86_64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-x64.zip"
+[ $(uname -m) = aarch64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-arm64.zip"
+[ $(uname -m) = arm64 ] && DOWNLOAD_URL="https://clappit-public.s3.us-west-2.amazonaws.com/clappit-osx-arm64.zip"
 
 
 # Replace with the desired filename for the downloaded binary
@@ -46,6 +46,8 @@ if [[ $? -ne 0 ]]; then
   echo "Extraction failed. Exiting."
   exit 1
 fi
+echo "cleaning $DOWNLOAD_DIR/$BINARY_NAME.zip"
+sudo rm $DOWNLOAD_DIR/$BINARY_NAME.zip
 
 # Check if the installation directory exists
 if [ ! -d "$INSTALL_DIR" ]; then
